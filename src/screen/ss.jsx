@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { apiClient } from "../../axios/axios.js";
 
+// This component was created by Paras Ohri
 const MessageUI = () => {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
@@ -62,9 +63,12 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        height: '100vh',
+        minHeight:"80vh",
+        maxHeight:"90vh",
         padding: '20px',
         boxSizing: 'border-box',
+        minWidth:"90vw",
+        
     },
     messages: {
         flex: 1,
@@ -113,10 +117,21 @@ const styles = {
 };
 
 const App = () => {
+<<<<<<< HEAD
+    return (
+        <div style={{   overflow: 'auto',  boxSizing: 'border-box',  display: 'flex',flexDirection:"column",justifyContent:"center", minHeight: '100vh',  }}>  
+            <h3 style={{ textAlign: 'center',marginTop:"0vh" }}>Chatbot FOR CSE time table</h3>
+            <div style={{ display: 'flex', justifyContent: 'center', }}>
+                <MessageUI />
+            </div>
+            <p style={{ textAlign: 'center' }}>made by Paras Ohri</p>
+        </div>
+ 
     return (<>
         <MessageUI />
         made by PARAS OHRI
         </>
+ 
     );
 };
 
