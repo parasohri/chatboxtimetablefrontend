@@ -113,8 +113,10 @@ const styles = {
 };
 
 const App = () => {
-    return (
+    return (<>
         <MessageUI />
+        made by PARAS OHRI
+        </>
     );
 };
 
