@@ -117,7 +117,6 @@ const styles = {
 };
 
 const App = () => {
-<<<<<<< HEAD
     return (
         <div style={{   overflow: 'auto',  boxSizing: 'border-box',  display: 'flex',flexDirection:"column",justifyContent:"center", minHeight: '100vh',  }}>  
             <h3 style={{ textAlign: 'center',marginTop:"0vh" }}>Chatbot FOR CSE time table</h3>
@@ -126,12 +125,6 @@ const App = () => {
             </div>
             <p style={{ textAlign: 'center' }}>made by Paras Ohri</p>
         </div>
- 
-    return (<>
-        <MessageUI />
-        made by PARAS OHRI
-        </>
- 
     );
 };
 
